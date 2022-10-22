@@ -27,7 +27,7 @@ async def on_message(message):
   if len(message.attachments)==0:
     #if asking for help
     if message.content == '\help watcher':
-      await message.channel.send('$help : please refer here')
+      await message.channel.send('$help : please refer here --> https://github.com/Adiziel/Watcher#readme')
     else:
       print('Deleting text')
       await message.delete()
