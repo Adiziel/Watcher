@@ -46,4 +46,4 @@ async def on_message(message):
 
 
 
-client.run(os.environ['token'])
+client.run(${{ TOKEN }})
