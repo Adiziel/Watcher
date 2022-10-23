@@ -2,6 +2,7 @@ import os
 import discord
 import pytz
 from datetime import datetime 
+import os
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -45,5 +46,7 @@ async def on_message(message):
   
 
 
+if __name__ == "__main__":
+  client.run(os.getenv('DISCORD_TOKEN'))
 
-client.run(${{ TOKEN }})
+
